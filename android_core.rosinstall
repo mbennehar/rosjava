@@ -3,6 +3,6 @@
 #
 [
 {'git': {'local-name': 'android_core', 'version': 'master', 'uri':'https://github.com/hippomormor/android_core'}},
-{'git': {'local-name': 'android_extras', 'version': 'master', 'uri':'https://github.com/rosjava/android_extras'}},
+{'git': {'local-name': 'android_extras', 'version': 'master', 'uri':'https://github.com/hippomormor/android_extras'}},
 ]
 
