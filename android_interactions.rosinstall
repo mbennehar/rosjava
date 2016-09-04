@@ -6,6 +6,6 @@
 # - https://raw.github.com/robotics-in-concert/rocon/hydro-devel/rocon_rosjava.rosinstall
 
 [
-{'git': {'local-name': 'android_apps', 'version': 'master', 'uri':'https://github.com/rosjava/android_apps'}},
-{'git': {'local-name': 'android_remocons', 'version': 'master', 'uri':'https://github.com/rosjava/android_remocons'}},
+{'git': {'local-name': 'android_apps', 'version': 'master', 'uri':'https://github.com/hippomormor/android_apps'}},
+{'git': {'local-name': 'android_remocons', 'version': 'master', 'uri':'https://github.com/hippomormor/android_remocons'}},
 ]
