@@ -6,7 +6,7 @@
 # Note that we use hydro branch of rosjava_messages - it is the current set of usable messages which is
 # based on daily scraping of the hydro branch.
 [
-{'git': {'local-name': 'rosjava_build_tools', 'version': 'master', 'uri':'https://github.com/rosjava/rosjava_build_tools.git'}},
+{'git': {'local-name': 'rosjava_build_tools', 'version': 'master', 'uri':'https://github.com/hippomormor/rosjava_build_tools.git'}},
 {'git': {'local-name': 'rosjava_bootstrap', 'version': 'master', 'uri':'https://github.com/rosjava/rosjava_bootstrap.git'}},
 {'git': {'local-name': 'rosjava_messages', 'version': 'hydro', 'uri':'https://github.com/rosjava/rosjava_messages.git'}},
 {'git': {'local-name': 'rosjava_core', 'version': 'master', 'uri':'https://github.com/hippomormor/rosjava_core.git'}},
