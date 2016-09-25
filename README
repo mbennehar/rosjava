@@ -46,7 +46,6 @@ mkdir ~/.gradle
 cd ~/.gradle
 rm gradle.properties
 wget http://hippomormor.ddns.net/Ressources/gradle.properties
-echo "$($GREEN)Gradle daemon activated $($NC)"
 
 # Maven
 mkdir -p ~/Sources/Repos
