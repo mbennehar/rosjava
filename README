@@ -7,8 +7,7 @@ sudo add-apt-repository ppa:webupd8team/java
 
 # Install Android Studio
 export JAVA_HOME=/usr/lib/jvm/java-8-oracle
-wget https://dl.google.com/dl/android/studio/ide-zips/2.2.0.12/android-studio-ide-145.3276617
-	-linux.zip
+wget https://dl.google.com/dl/android/studio/ide-zips/2.2.0.12/android-studio-ide-145.3276617-linux.zip
 mkdir ~/Programs
 unzip android-studio-ide-145.3276617-linux.zip -d ~/Programs
 rm android-studio-ide-145.3276617-linux.zip
@@ -19,8 +18,7 @@ sh ~/Programs/android-studio/bin/studio.sh
 ~/Android/Sdk/tools/android
 
 # Install ROS Kinetic
-sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > 
-	/etc/apt/sources.list.d/ros-latest.list'
+sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
 sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 0xB01FA116
 sudo apt-get update
 sudo apt-get 
@@ -68,8 +66,7 @@ git clone https://github.com/rosjava/rosjava_mvn_repo
 # rosjava
 mkdir -p ~/Sources/rosjava/devel/share
 ln -s ~/Sources/Repos/rosjava_mvn_repo ~/Sources/rosjava/devel/share/maven
-wstool init -j4 ~/Sources/rosjava/src https://raw.githubusercontent.com/hippomormor/
-	rosjava/master/rosjava.rosinstall
+wstool init -j4 ~/Sources/rosjava/src https://raw.githubusercontent.com/hippomormor/rosjava/master/rosjava.rosinstall
 cd ~/Sources/rosjava/src
 catkin_init_workspace
 cd ..
@@ -82,8 +79,7 @@ echo "source ~/Sources/rosjava/devel/setup.bash" >> ~/.bashrc
 mkdir -p ~/Sources/android_core/devel/share
 ln -s ~/Sources/Repos/rosjava_mvn_repo ~/Sources/android_core/devel/share/maven
 cd ~/Sources/android_core
-wstool init -j4 src https://raw.githubusercontent.com/hippomormor/rosjava/master/
-	android_core.rosinstall
+wstool init -j4 src https://raw.githubusercontent.com/hippomormor/rosjava/master/android_core.rosinstall
 cd src
 catkin_init_workspace
 cd ..
@@ -97,8 +93,7 @@ echo "source ~/Sources/android_core/devel/setup.bash" >> ~/.bashrc
 mkdir -p ~/Sources/android_interactions/devel/share
 ln -s ~/Sources/Repos/rosjava_mvn_repo ~/Sources/android_interactions/devel/share/maven
 cd ~/Sources/android_interactions
-wstool init -j4 src https://raw.githubusercontent.com/hippomormor/rosjava/master/
-	android_interactions.rosinstall
+wstool init -j4 src https://raw.githubusercontent.com/hippomormor/rosjava/master/android_interactions.rosinstall
 cd src
 catkin_init_workspace
 cd ..
