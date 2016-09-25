@@ -1,4 +1,4 @@
-				Port of rosjava, Android_core etc. to ROS Kinetic Kame
+﻿Port of rosjava, Android_core etc. to ROS Kinetic Kame
 	
 # Following script sets up a working ROS Kinetic for Android:
 
@@ -30,14 +30,14 @@ echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
 # Fetch dependencies 
 sudo apt-get update
 sudo apt-get upgrade
-sudo apt-get install python-rosinstall freeglut3-dev libblas-dev liblapack-dev libcvc3-dev  build-essential cmake git 
-	libgtk2.0-dev pkg-config python-dev python-numpy libdc1394-22 libdc1394-22-dev libjpeg-dev libpng12-dev 
-	libtiff5-dev libjasper-dev libavcodec-dev libavformat-dev libswscale-dev libxine2-dev libgstreamer0.10-dev 
+sudo apt-get installpython-rosinstall freeglut3-dev libblas-dev liblapack-dev libcvc3-dev build-essential cmake git 
+	libgtk2.0-dev pkg-config python-dev python-numpy libdc1394-22 libdc1394-22-dev libjpeg-dev libpng12-dev libtiff5-dev 
+	libjasper-dev libavcodec-dev libavformat-dev libswscale-dev libxine2-dev libgstreamer0.10-dev 
 	libgstreamer-plugins-base0.10-dev libgphoto2-dev gphoto2 libgstreamer-plugins-base1.0-dev libv4l-dev libtbb-dev 
 	libfaac-dev libmp3lame-dev libopencore-amrnb-dev libopencore-amrwb-dev libtheora-dev libvorbis-dev libxvidcore-dev 
 	x264 v4l-utils exfat-fuse exfat-utils filezilla lib32stdc++6 lib32z1 python-wstool ros-kinetic-warehouse-ros 
-	libzbar-dev zbar-tools qtbase5-dev qtbase5-dev-tools libpcap-dev libboost-dev libvtk6-dev  oracle-java8-installer 
-	libflann-dev libeigen3-dev libopenni2-dev python-rosinstall-generator oracle-java7-installer install
+	libzbar-dev zbar-tools qtbase5-dev qtbase5-dev-tools libpcap-dev libboost-dev libvtk6-dev libflann-dev 
+	libeigen3-dev libopenni2-dev python-rosinstall-generator oracle-java7-installer
 
 # .bashrc
 echo "export ROS_MAVEN_REPOSITORY=~/Sources/Repos/rosjava_mvn_repo" >> ~/.bashrc
@@ -53,6 +53,7 @@ mkdir ~/.gradle
 cd ~/.gradle
 rm gradle.properties
 wget http://hippomormor.ddns.net/Ressources/gradle.properties
+echo "$($GREEN)Gradle daemon activated $($NC)"
 
 # Maven
 mkdir -p ~/Sources/Repos
