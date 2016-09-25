@@ -7,7 +7,8 @@ sudo add-apt-repository ppa:webupd8team/java
 
 # Install Android Studio
 export JAVA_HOME=/usr/lib/jvm/java-8-oracle
-wget https://dl.google.com/dl/android/studio/ide-zips/2.2.0.12/android-studio-ide-145.3276617-linux.zip
+wget https://dl.google.com/dl/android/studio/ide-zips/2.2.0.12/android-studio-ide-145.3276617
+	-linux.zip
 mkdir ~/Programs
 unzip android-studio-ide-145.3276617-linux.zip -d ~/Programs
 rm android-studio-ide-145.3276617-linux.zip
@@ -18,7 +19,8 @@ sh ~/Programs/android-studio/bin/studio.sh
 ~/Android/Sdk/tools/android
 
 # Install ROS Kinetic
-sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > 
+	/etc/apt/sources.list.d/ros-latest.list'
 sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 0xB01FA116
 sudo apt-get update
 sudo apt-get 
@@ -30,14 +32,17 @@ echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
 # Fetch dependencies 
 sudo apt-get update
 sudo apt-get upgrade
-sudo apt-get install python-rosinstall freeglut3-dev libblas-dev liblapack-dev libcvc3-dev build-essential cmake git 
-	libgtk2.0-dev pkg-config python-dev python-numpy libdc1394-22 libdc1394-22-dev libjpeg-dev libpng12-dev libtiff5-dev 
-	libjasper-dev libavcodec-dev libavformat-dev libswscale-dev libxine2-dev libgstreamer0.10-dev 
-	libgstreamer-plugins-base0.10-dev libgphoto2-dev gphoto2 libgstreamer-plugins-base1.0-dev libv4l-dev libtbb-dev 
-	libfaac-dev libmp3lame-dev libopencore-amrnb-dev libopencore-amrwb-dev libtheora-dev libvorbis-dev libxvidcore-dev 
-	x264 v4l-utils exfat-fuse exfat-utils lib32stdc++6 lib32z1 python-wstool ros-kinetic-warehouse-ros 
-	libzbar-dev zbar-tools qtbase5-dev qtbase5-dev-tools libpcap-dev libboost-dev libvtk6-dev libflann-dev 
-	libeigen3-dev libopenni2-dev python-rosinstall-generator oracle-java7-installer
+sudo apt-get install python-rosinstall freeglut3-dev libblas-dev liblapack-dev libcvc3-dev 
+	build-essential cmake git libgtk2.0-dev pkg-config python-dev python-numpy 
+	libdc1394-22 libdc1394-22-dev libjpeg-dev libpng12-dev libtiff5-dev libjasper-dev 
+	libavcodec-dev libavformat-dev libswscale-dev libxine2-dev libgstreamer0.10-dev 
+	libgstreamer-plugins-base0.10-dev libgphoto2-dev gphoto2 
+	libgstreamer-plugins-base1.0-dev libv4l-dev libtbb-dev libfaac-dev libmp3lame-dev 
+	libopencore-amrnb-dev libopencore-amrwb-dev libtheora-dev libvorbis-dev 
+	libxvidcore-dev x264 v4l-utils exfat-fuse exfat-utils lib32stdc++6 lib32z1 
+	python-wstool ros-kinetic-warehouse-ros libzbar-dev zbar-tools qtbase5-dev 
+	qtbase5-dev-tools libpcap-dev libboost-dev libvtk6-dev libflann-dev libeigen3-dev 
+	libopenni2-dev python-rosinstall-generator oracle-java7-installer
 
 # .bashrc
 echo "export ROS_MAVEN_REPOSITORY=~/Sources/Repos/rosjava_mvn_repo" >> ~/.bashrc
@@ -63,7 +68,8 @@ git clone https://github.com/rosjava/rosjava_mvn_repo
 # rosjava
 mkdir -p ~/Sources/rosjava/devel/share
 ln -s ~/Sources/Repos/rosjava_mvn_repo ~/Sources/rosjava/devel/share/maven
-wstool init -j4 ~/Sources/rosjava/src https://raw.githubusercontent.com/hippomormor/rosjava/master/rosjava.rosinstall
+wstool init -j4 ~/Sources/rosjava/src https://raw.githubusercontent.com/hippomormor/
+	rosjava/master/rosjava.rosinstall
 cd ~/Sources/rosjava/src
 catkin_init_workspace
 cd ..
@@ -76,7 +82,8 @@ echo "source ~/Sources/rosjava/devel/setup.bash" >> ~/.bashrc
 mkdir -p ~/Sources/android_core/devel/share
 ln -s ~/Sources/Repos/rosjava_mvn_repo ~/Sources/android_core/devel/share/maven
 cd ~/Sources/android_core
-wstool init -j4 src https://raw.githubusercontent.com/hippomormor/rosjava/master/android_core.rosinstall
+wstool init -j4 src https://raw.githubusercontent.com/hippomormor/rosjava/master/
+	android_core.rosinstall
 cd src
 catkin_init_workspace
 cd ..
@@ -90,7 +97,8 @@ echo "source ~/Sources/android_core/devel/setup.bash" >> ~/.bashrc
 mkdir -p ~/Sources/android_interactions/devel/share
 ln -s ~/Sources/Repos/rosjava_mvn_repo ~/Sources/android_interactions/devel/share/maven
 cd ~/Sources/android_interactions
-wstool init -j4 src https://raw.githubusercontent.com/hippomormor/rosjava/master/android_interactions.rosinstall
+wstool init -j4 src https://raw.githubusercontent.com/hippomormor/rosjava/master/
+	android_interactions.rosinstall
 cd src
 catkin_init_workspace
 cd ..
