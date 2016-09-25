@@ -30,12 +30,12 @@ echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
 # Fetch dependencies 
 sudo apt-get update
 sudo apt-get upgrade
-sudo apt-get installpython-rosinstall freeglut3-dev libblas-dev liblapack-dev libcvc3-dev build-essential cmake git 
+sudo apt-get install python-rosinstall freeglut3-dev libblas-dev liblapack-dev libcvc3-dev build-essential cmake git 
 	libgtk2.0-dev pkg-config python-dev python-numpy libdc1394-22 libdc1394-22-dev libjpeg-dev libpng12-dev libtiff5-dev 
 	libjasper-dev libavcodec-dev libavformat-dev libswscale-dev libxine2-dev libgstreamer0.10-dev 
 	libgstreamer-plugins-base0.10-dev libgphoto2-dev gphoto2 libgstreamer-plugins-base1.0-dev libv4l-dev libtbb-dev 
 	libfaac-dev libmp3lame-dev libopencore-amrnb-dev libopencore-amrwb-dev libtheora-dev libvorbis-dev libxvidcore-dev 
-	x264 v4l-utils exfat-fuse exfat-utils filezilla lib32stdc++6 lib32z1 python-wstool ros-kinetic-warehouse-ros 
+	x264 v4l-utils exfat-fuse exfat-utils lib32stdc++6 lib32z1 python-wstool ros-kinetic-warehouse-ros 
 	libzbar-dev zbar-tools qtbase5-dev qtbase5-dev-tools libpcap-dev libboost-dev libvtk6-dev libflann-dev 
 	libeigen3-dev libopenni2-dev python-rosinstall-generator oracle-java7-installer
 
