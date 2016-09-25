@@ -34,7 +34,9 @@ sudo apt-get install python-rosinstall freeglut3-dev libblas-dev liblapack-dev l
 
 # .bashrc
 echo "export ROS_MAVEN_REPOSITORY=~/Sources/Repos/rosjava_mvn_repo" >> ~/.bashrc
+
 export ROS_MAVEN_REPOSITORY=~/Sources/Repos/rosjava_mvn_repo
+
 echo "export ROS_MAVEN_DEPLOYMENT_REPOSITORY=~/Sources/Repos/rosjava_mvn_repo" >> ~/.bashrc
 export ROS_MAVEN_DEPLOYMENT_REPOSITORY=~/Sources/Repos/rosjava_mvn_repo
 echo "export ANDROID_HOME=~/Android/Sdk" >> ~/.bashrc
