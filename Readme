@@ -34,17 +34,11 @@ sudo apt-get install python-rosinstall freeglut3-dev libblas-dev liblapack-dev l
 
 # .bashrc
 echo "export ROS_MAVEN_REPOSITORY=~/Sources/Repos/rosjava_mvn_repo" >> ~/.bashrc
-
 export ROS_MAVEN_REPOSITORY=~/Sources/Repos/rosjava_mvn_repo
-
 echo "export ROS_MAVEN_DEPLOYMENT_REPOSITORY=~/Sources/Repos/rosjava_mvn_repo" >> ~/.bashrc
-
 export ROS_MAVEN_DEPLOYMENT_REPOSITORY=~/Sources/Repos/rosjava_mvn_repo
-
 echo "export ANDROID_HOME=~/Android/Sdk" >> ~/.bashrc
-
 export ANDROID_HOME=~/Android/Sdk
-
 echo 'export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools' >> ~/.bashrc
 
 # Gradle daemon
@@ -101,6 +95,9 @@ echo "source ~/Sources/android_interactions/devel/setup.bash" >> ~/.bashrc
 
 # Done, restart Terminal!
 
+
+
+
 # Following script sets up a working catkin workspace for ROS Kinetic for Android Studio 2.2 (SDK 23):
 # !REPLACE 'NAME' WITH YOUR PROJECT-NAME!
 
@@ -135,6 +132,6 @@ cd ~/Workspaces/NAME
 
 catkin_make
 
-YOUR BUILD IS LOCATED AT: 
+# YOUR BUILD IS LOCATED AT: 
 ~/Workspaces/NAME
 
