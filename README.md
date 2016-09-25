@@ -1,8 +1,8 @@
-		Port of rosjava, Android_core & Android_interactions to ROS Kinetic Kame
+# Port of rosjava, Android_core & Android_interactions to ROS Kinetic Kame
 		
-# Following script sets up a working ROS Kinetic for Android:
+Following script sets up a working ROS Kinetic for Android:
 
-# Setup Java PPA
+Setup Java PPA
 sudo add-apt-repository ppa:webupd8team/java
 
 # Install Android Studio
