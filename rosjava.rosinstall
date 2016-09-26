@@ -9,7 +9,7 @@
 {'git': {'local-name': 'rosjava_build_tools', 'version': 'master', 'uri':'https://github.com/hippomormor/rosjava_build_tools.git'}},
 {'git': {'local-name': 'genjava', 'version': 'indigo', 'uri':'https://github.com/rosjava/genjava'}},
 {'git': {'local-name': 'rosjava_bootstrap', 'version': 'master', 'uri':'https://github.com/rosjava/rosjava_bootstrap.git'}},
-{'git': {'local-name': 'rosjava_messages', 'version': 'indigo-devel', 'uri':'https://github.com/rosjava/rosjava_messages.git'}},
+{'git': {'local-name': 'rosjava_messages', 'version': 'hydro', 'uri':'https://github.com/rosjava/rosjava_messages.git'}},
 {'git': {'local-name': 'rosjava_core', 'version': 'master', 'uri':'https://github.com/hippomormor/rosjava_core.git'}},
 {'git': {'local-name': 'rosjava_extras', 'version': 'master', 'uri':'https://github.com/rosjava/rosjava_extras.git'}},
 {'git': {'local-name': 'zeroconf_jmdns_suite', 'version': 'master', 'uri':'https://github.com/rosjava/zeroconf_jmdns_suite.git'}},
