@@ -14,7 +14,7 @@ rm android-studio-ide-145.3276617-linux.zip
 sh ~/Programs/android-studio/bin/studio.sh
 
 # Start Android SDK-manager
-# Select (Build-Tools 21.1.2) + (SDK 23, 21, 18, 15, 10 & 13) + (Android Support) #
+# Select (Build-Tools 21.1.2 & 24.0.2) + (SDK 23, 21, 18, 15, 10 & 13) + (Android Support) #
 ~/Android/Sdk/tools/android
 
 # Install ROS Kinetic
